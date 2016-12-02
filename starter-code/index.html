@@ -20,10 +20,14 @@
     <script id="article-template" type="text/x-handlebars-template">
       <article class="clearfix" data-author="" data-category="">
         <header>
-          <h1>title</h1>
+          <h1>{{title}}</h1>
           <div class="byline">
             By <address><a href="#"></a></address>
             {{publishStatus}}
+            {{author}}
+            {{authorUrl}}
+            {{publishedOn}}
+            {{{body}}}
           </div>
         </header>
         <section class="article-body"></section>
